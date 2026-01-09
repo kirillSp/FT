@@ -1,0 +1,38 @@
+@use "normaliza";
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "global";
+
+@use "blocks/burger-button";
+@use "blocks//button";
+@use "blocks/header";
+@use "blocks/icons";
+@use "blocks/logo";
+@use "blocks//badge";
+@use "blocks/soc1als";
+@use "blocks/footer";
+
+@use "blocks/adventages";
+@use "blocks/hero";
+@use "blocks/metrics";
+@use "blocks/resources-preview";
+@use "blocks/team";
+
+@use "blocks/tags";
+@use "blocks/section";
+@use "blocks/tile";
+@use "blocks/list";
+@use "blocks/card";
+
+.header {
+    display: none !important;
+}
+
+main > *:not(:last-child) {
+    display: none
+}
+
+.footer {
+    display: none !important;
+}
