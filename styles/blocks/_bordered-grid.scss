@@ -1,0 +1,55 @@
+@use "../helpers/" as *;
+
+.bordered-grid {
+    --columns: 1;
+    --itemPaddingY: #{fluid(80, 40)};
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+
+    &--2-cols {
+        --columns: 1;
+
+    }
+
+    &--3-cols {
+        --columns: 3;
+        --item-padding-x: #{rem(50)};
+
+        @include laptop {
+            --item-padding-x: #{rem(40)};
+        }
+
+        @include tablet-above {
+            .bordered-grid__item {
+                &:nth-child(3n-2),
+                &:nth-child(3n-1) {
+                    padding-right: var(--item-padding-x);
+                    border-right: var(--border);
+                }
+    
+                &:nth-child(3n - 1) {
+                    @include full-vw-centred-line(bottom);
+                }
+    
+                &:nth-child(3n-1),
+                &:nth-child(3n) {
+                    padding-left: var(--item-padding-x); 
+                }
+            }
+        }    
+
+        @include tablet {
+            --columns: 1;
+            
+            .bordered-grid__item:not(:last-child) {
+                border-bottom: var(--border);
+            }
+        }    
+
+    }
+
+    &__item {
+        padding-block: var(--itemPaddingY);
+    }
+}

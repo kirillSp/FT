@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="header" data-js-header>
+    <header class="header" data-js-header>
         <div class="header__promo">
             <div class="header__promo-inner container">
                 <a href="#" class="header__promo-link">
@@ -27,10 +27,10 @@
                 </a>
                 <div class="header__overlay" data-js-header-overlay>
                     <ul class="header__menu-list">
-                        <li class="header__menu_item"><a href="/" class="header__menu-link">Home</a></li>
-                        <li class="header__menu_item"><a href="/" class="header__menu-link">News</a></li>
-                        <li class="header__menu_item"><a href="/" class="header__menu-link">Podcasts</a></li>
-                        <li class="header__menu_item"><a href="/" class="header__menu-link">Resources</a></li>
+                        <li class="header__menu_item"><a href="/index.html" class="header__menu-link is-active">Home</a></li>
+                        <li class="header__menu_item"><a href="./news.html" class="header__menu-link">News</a></li>
+                        <li class="header__menu_item"><a href="./podcast.html" class="header__menu-link">Podcasts</a></li>
+                        <li class="header__menu_item"><a href="./resources.html" class="header__menu-link">Resources</a></li>
                     </ul>
                     <a href="" class="header__contact-us-link button button--accent">
                         Contact Us
@@ -44,7 +44,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </header>
     <main>
         <section class="hero">
             <div class="hero__main container">
@@ -101,7 +101,7 @@
                         <div class="adventages-card">
                             <img class="adventages-card__image" src="./images/adventages/icon-1.svg" alt="" width="50"
                                 height="50" loading="lazy">
-                            <a href="" class="adventages-card__link">
+                            <a href="" class="adventages-card__link circle-icon">
                                 <h3 class="adventages-card__title h3">Latest News Updates</h3>
                                 <p class="adventages-card__subtitle">Stay Current</p>
                             </a>
@@ -112,7 +112,7 @@
                         <div class="adventages-card">
                             <img class="adventages-card-image" src="./images/adventages/icon-2.svg" alt="" width="50"
                                 height="50" loading="lazy">
-                            <a href="" class="adventages-card__link">
+                            <a href="" class="adventages-card__link circle-icon">
                                 <h3 class="adventages-card__title h3">Expert Contributors</h3>
                                 <p class="adventages-card__subtitle">Trusted Insights</p>
                             </a>
@@ -123,7 +123,7 @@
                         <div class="adventages-card">
                             <img class="adventages-card-image" src="./images/adventages/icon-3.svg" alt="" width="50"
                                 height="50" loading="lazy">
-                            <a href="" class="adventages-card__link">
+                            <a href="" class="adventages-card__link circle-icon">
                                 <h3 class="adventages-card__title h3">Global Readership</h3>
                                 <p class="adventages-card__subtitle">Worldwide Impact</p>
                             </a>
@@ -237,7 +237,7 @@
                         <p class="section__subtitle tag">A Knowledge Treasure Trove</p>
                         <h2 class="section__title" id="block-title">Explore FutureTech's In-Depth Blog Posts</h2>
                     </div>
-                    <a href="/" class="section__link button">
+                    <a href="/blog.html" class="section__link button">
                         <span class="icon icon--yellow-arrow">View All Blogs </span>
                     </a>
                 </div>
@@ -537,7 +537,7 @@
                 <div class="section__header-inner container">
                     <div class="section__header-info">
                         <p class="section__subtitle tag">Your Gateway to In-Depth Information</p>
-                        <h2 class="resource__title" id="block-title">Unlock Valuable Knowledge with FutureTech's
+                        <h2 class="resource__title" id="resource-title">Unlock Valuable Knowledge with FutureTech's
                             Resources</h2>
                     </div>
                     <a href="/" class="section__link button">
@@ -690,6 +690,258 @@
                                 </div>
                             </div>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="previews-title">
+            <header class="section__header">
+                <div class="section__header-inner container">
+                    <div class="section__header-info">
+                        <p class="section__subtitle tag">What Our Readers Say</p>
+                        <h2 class="resource__title" id="previews-title">Real Words from Real Readers</h2>
+                    </div>
+                    <a href="/" class="section__link button">
+                        <span class="icon icon--yellow-arrow">View All Testimonials</span>
+                    </a>
+                </div>
+            </header>
+
+            <div class="section__body">
+                <ul class="bordered-grid bordered-grid--3-cols container">
+
+                    <li class="bordered-grid__item">
+
+                        <div class="review-card">
+
+                            <div class="review-card__author person-card">
+                                <img class="person-card__image" src="./images/blog/1.png" alt="" width="60" height="60"
+                                    loading="lazy" />
+                                <div class="person-card__body">
+                                    <p class="person-card__name">Sarah Thompson</p>
+                                    <p class="person-card__department">San Francisco, USA</p>
+                                </div>
+                            </div>
+
+                            <div class="review-card__body tile">
+                                <div aria-label="Rating 5 star" class="review-card__rating-view rating-view"
+                                    title="Rating 5">
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                </div>
+                                <blockquote>
+                                    <p>The ebooks on AI in education have been a game-changer for my research. They
+                                        provide in-depth insights and case studies that are invaluable for staying
+                                        updated.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="bordered-grid__item">
+
+                        <div class="review-card">
+
+                            <div class="review-card__author person-card">
+                                <img class="person-card__image" src="./images/blog/1.png" alt="" width="60" height="60"
+                                    loading="lazy" />
+                                <div class="person-card__body">
+                                    <p class="person-card__name">Raj Patel</p>
+                                    <p class="person-card__department">Mumbai, India</p>
+                                </div>
+                            </div>
+
+                            <div class="review-card__body tile">
+                                <div aria-label="Rating 5 star" class="review-card__rating-view rating-view"
+                                    title="Rating 5">
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                </div>
+                                <blockquote>
+                                    <p>The whitepapers on renewable energy strategies have greatly influenced my work.
+                                        They offer detailed data and analysis.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="bordered-grid__item">
+
+                        <div class="review-card">
+
+                            <div class="review-card__author person-card">
+                                <img class="person-card__image" src="./images/blog/1.png" alt="" width="60" height="60"
+                                    loading="lazy" />
+                                <div class="person-card__body">
+                                    <p class="person-card__name">Emily Adams</p>
+                                    <p class="person-card__department">London, UK</p>
+                                </div>
+                            </div>
+
+                            <div class="review-card__body tile">
+                                <div aria-label="Rating 5 star" class="review-card__rating-view rating-view"
+                                    title="Rating 5">
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                </div>
+                                <blockquote>
+                                    <p>The AI in healthcare reports have been an essential resource for our hospital.
+                                        They highlight the latest innovations and best practices, improving patient
+                                        care.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="bordered-grid__item">
+
+                        <div class="review-card">
+
+                            <div class="review-card__author person-card">
+                                <img class="person-card__image" src="./images/blog/1.png" alt="" width="60" height="60"
+                                    loading="lazy" />
+                                <div class="person-card__body">
+                                    <p class="person-card__name">Alan Jackson</p>
+                                    <p class="person-card__department">Houston, USA</p>
+                                </div>
+                            </div>
+
+                            <div class="review-card__body tile">
+                                <div aria-label="Rating 5 star" class="review-card__rating-view rating-view"
+                                    title="Rating 5">
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                </div>
+                                <blockquote>
+                                    <p>The reports on space mining prospects have fueled my passion for space
+                                        exploration. They provide a comprehensive view.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="bordered-grid__item">
+
+                        <div class="review-card">
+
+                            <div class="review-card__author person-card">
+                                <img class="person-card__image" src="./images/blog/1.png" alt="" width="60" height="60"
+                                    loading="lazy" />
+                                <div class="person-card__body">
+                                    <p class="person-card__name">Jessica Miller</p>
+                                    <p class="person-card__department">Boston, USA</p>
+                                </div>
+                            </div>
+
+                            <div class="review-card__body tile">
+                                <div aria-label="Rating 5 star" class="review-card__rating-view rating-view"
+                                    title="Rating 5">
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                </div>
+                                <blockquote>
+                                    <p>The research papers on genomic breakthroughs have been a goldmine of information.
+                                        They've shaped the direction of my research in genomics.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="bordered-grid__item">
+
+                        <div class="review-card">
+
+                            <div class="review-card__author person-card">
+                                <img class="person-card__image" src="./images/blog/1.png" alt="" width="60" height="60"
+                                    loading="lazy" />
+                                <div class="person-card__body">
+                                    <p class="person-card__name">Diego Lopez</p>
+                                    <p class="person-card__department">Barcelona, Spain</p>
+                                </div>
+                            </div>
+
+                            <div class="review-card__body tile">
+                                <div aria-label="Rating 5 star" class="review-card__rating-view rating-view"
+                                    title="Rating 5">
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                    <div class="rating-view__star is-active"></div>
+                                </div>
+                                <blockquote>
+                                    <p>The ebooks on renewable energy strategies have given me the insights I needed to
+                                        pivot our startup toward sustainability.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="about" aria-labelledby="about-title">
+            <div class="about__inner container">
+                <header class="about__header">
+                    <img class="about__image" src="images/about/about_icon.svg" alt="" width="120" height="120"
+                        loading="lazy">
+
+                    <div class="about__info">
+                        <p class="about__subtitle tag">Learn, Connect, and Innovate</p>
+                        <h2 class="about__title" id="about-title">Be Part of the Future Tech Revolution</h2>
+                    </div>
+
+                    <div class="about__description">
+                        <p>Immerse yourself in the world of future technology. Explore our
+                            comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the
+                            industry. Join a dynamic community of forward-thinkers.</p>
+                    </div>
+                </header>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <a href="#" class="about__card tile">
+                            <h3 class="about__card-title circle-icon">Resource Access</h3>
+                            <div class="about__card-description">
+                                <p>Visitors can access a wide range of resources, including ebooks, whitepapers,
+                                    reports.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="about__item">
+                        <a href="#" class="about__card tile">
+                            <h3 class="about__card-title circle-icon">Community Forum</h3>
+                            <div class="about__card-description">
+                                <p>Join our active community forum to discuss industry trends, share insights, and
+                                    collaborate with peers.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="about__item">
+                        <a href="#" class="about__card tile">
+                            <h3 class="about__card-title circle-icon">Tech Events</h3>
+                            <div class="about__card-description">
+                                <p>Stay updated on upcoming tech events, webinars, and conferences to enhance your
+                                    knowledge.</p>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
