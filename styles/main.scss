@@ -39,14 +39,19 @@
 @use "./blocks/about";
 @use "./blocks/about-card";
 
-.header {
-    display: none !important;
-}
+@use "./blocks/hero-alt";
+@use "./blocks/news-card";
+@use "./blocks/news";
+@use "./blocks/summary";
 
-main > *:not(:last-child) {
-    display: none
-}
+// .header {
+//     display: none !important;
+// }
 
-.footer {
-    display: none !important;
-}
+// main > *:not(:last-child) {
+//     display: none
+// }
+
+// .footer {
+//     display: none !important;
+// }
