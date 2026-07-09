@@ -1,0 +1,51 @@
+@use "../helpers" as *;
+
+.video-player {
+    position: relative;
+
+    .video-player__video {
+        height:fluid(412, 210);
+        border-radius: rem(50);
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @include laptop {
+        border-radius: rem(10);
+    }
+
+    .video-player__pannel {
+        position: absolute;
+        inset: 0;
+        padding: rem(30);
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        column-gap: 1rem;
+        transition-duration: var(--transition-duration);
+
+        &:not(.is-active) {
+            @include hide;
+        }
+
+        .video-player__button {
+            --size: #{rem(70)};
+
+            @include square(var(--size));
+            @include flex-center;
+            
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            color: var(--color-light);
+
+            @include hover {
+                color: var(--color-accent);
+            }
+
+            @include laptop {
+                --size: #{rem(50)};
+            }
+        }
+    }
+}
