@@ -33,3 +33,10 @@
         background-image: url("../../icons/icon-eye-yellow.svg");
     }
 }
+
+.icon--grey-arrow-down {
+    &::after {
+        content: "";
+        background-image: url("../../icons/arrow-down-grey.svg");
+    }
+}

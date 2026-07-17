@@ -44,8 +44,12 @@
 @use "./blocks/news";
 @use "./blocks/summary";
 
+@use "./blocks/expandable-content";
 @use "./blocks/video-card";
 @use "./blocks/video-player";
+@use "./blocks/block-details";
+@use "./blocks/table-of-contets";
+
 
 // .header {
 //     display: none !important;
