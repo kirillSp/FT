@@ -41,6 +41,15 @@
             }
         }
 
+        &-info {
+            
+            &:has(.card__rating-view) {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+
         &-icon {
             width: fluid(80, 50);
         }
@@ -78,6 +87,20 @@
             @include mobile-above {
                 grid-template-columns: auto 1fr;
             }
+        }
+
+        &--3-cols {
+            display: grid;
+            gap: fluid(50, 20) rem(20);
+            
+            @include tablet-above {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @include laptop {
+                column-gap: rem(16);
+            }
+
         }
 
     }

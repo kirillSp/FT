@@ -4,15 +4,20 @@
     position: relative;
 
     .video-player__video {
-        height:fluid(412, 210);
+        height: fluid(412, 210);
         border-radius: rem(50);
         width: 100%;
         object-fit: cover;
+       
+        &--small {
+            height: fluid(290, 208);
+        }
     }
 
     @include laptop {
         border-radius: rem(10);
     }
+
 
     .video-player__pannel {
         position: absolute;
@@ -26,6 +31,11 @@
 
         &:not(.is-active) {
             @include hide;
+        }
+        
+        &--center {
+            justify-content: center;
+            align-items: center;
         }
 
         .video-player__button {
