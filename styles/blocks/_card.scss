@@ -37,11 +37,14 @@
             row-gap: fluid(50, 24);
 
             @include tablet {
+                grid-template-columns: 1fr;
                 justify-content: start;
             }
         }
 
         &-info {
+            display: grid;
+            row-gap: fluid(16, 6);
             
             &:has(.card__rating-view) {
                 display: flex;
@@ -132,7 +135,6 @@
 
         &--wide {
             grid-column: -1 / 1;
-
         }
         
         &--wide-on-mobile-s {

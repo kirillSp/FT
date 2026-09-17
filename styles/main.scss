@@ -52,6 +52,15 @@
 
 @use "./blocks/report-card";
 
+@use "./blocks/accordion-group";
+@use "./blocks/accordion";
+@use "./blocks/checkbox";
+@use "./blocks/contacts-card";
+@use "./blocks/contacts";
+@use "./blocks/feedback-form";
+@use "./blocks/field";
+@use "./blocks/select";
+
 // .header {
 //     display: none !important;
 // }
